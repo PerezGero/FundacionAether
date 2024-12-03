@@ -1,0 +1,67 @@
+* { 
+	box-sizing: border-box; 
+}
+body {
+	background-color: lightblue;
+	background: url(../img/Fondo.jpg);
+	text-align: center;
+}
+.caja {
+	width: 100%;
+	max-width: 480px;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 2em; 
+}
+.navegador {
+    display: flex;
+	text-align: center;
+	margin: 1em;
+    flex-direction: column;
+}
+ul {
+	list-style-type: none;
+}
+li {
+    display: inline-block;	
+}
+div ul li a {
+	padding: .5em;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+.contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+article {
+	padding: 1em;
+}
+
+footer {
+	padding: .5em;
+	background-color: #a769b4;
+    
+}
+.border {
+	border: 20px darkblue;
+}
+
+
+@media (min-width: 960px){
+	.caja {
+		max-width: 100%;
+	}
+	.columnas{
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+	    align-items: center;
+        height: 50%;
+        padding: 2em;
+        margin: 1em;
+	}
+
+}
