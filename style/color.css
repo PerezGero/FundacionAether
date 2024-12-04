@@ -45,12 +45,24 @@ footer {
 	background-color: #a769b4;
     
 }
-.border {
-	border: 20px darkblue;
+.responsive-img {
+  display: none; /* Oculta la imagen completamente */
+}
+.image-with-border { 
+display: inline-block;
+  width: auto;
+height: auto;
+border: solid darkgrey 10px; /* Borde negro de 5 cm */
+border-radius: 20%;
 }
 
 
 @media (min-width: 960px){
+
+	.responsive-img {
+    display: block; /* La imagen vuelve a aparecer */
+    }
+
 	.caja {
 		max-width: 100%;
 	}
