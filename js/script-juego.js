@@ -1,27 +1,27 @@
 const questions = [
   {
-    question: "¿Cuál es la capital de Francia?",
-    options: ["Madrid", "París", "Roma"],
+    question: "¿Cuál es el habitat del UE-02 Pheromosa?",
+    options: ["Ultrabosque", "Ultradesierto", "Ultropolis"],
     answer: 1
   },
   {
-    question: "¿Cuánto es 5 + 3?",
-    options: ["6", "8", "10"],
+    question: "¿Cuál es el metodo de cotencion creado para los UE?",
+    options: ["El repelente", "La Enteball", "la Ultraball"],
     answer: 1
   },
   {
-    question: "¿Qué planeta es conocido como el planeta rojo?",
-    options: ["Venus", "Marte", "Júpiter"],
+    question: "¿Cuales son los tipos elementales del UE-04 Kartana?",
+    options: ["Roca Veneno", "Planta Acero", "Bicho Lucha"],
     answer: 1
   },
   {
-    question: "¿Quién escribió 'Don Quijote de la Mancha'?",
-    options: ["Miguel de Cervantes", "Gabriel García Márquez", "Pablo Neruda"],
+    question: "¿Quién es la jefa de la fundacion Æther?",
+    options: ["Samina", "Polo", "Sabrina"],
     answer: 0
   },
   {
-    question: "¿Cuál es el océano más grande del mundo?",
-    options: ["Atlántico", "Índico", "Pacífico"],
+    question: "¿Cuál es la region en la que aparecieron los UE?",
+    options: ["Galar", "Kalos", "Alola"],
     answer: 2
   }
 ];
@@ -82,9 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
     quizDiv.classList.add("hidden");
     resultDiv.classList.remove("hidden");
     if (score === 5) {
-      finalMessageDiv.innerHTML = `<h1>¡Felicidades ${playerName}, ganaste!</h1>`;
+      finalMessageDiv.innerHTML = `<h1>¡Felicidades ${playerName}, eres un Ultraguardian honorario!</h1>`;
+      hiddenImage.classList.remove("hidden");
     } else {
-      finalMessageDiv.innerHTML = `Lo siento ${playerName}, obtuviste ${score} puntos. ¡Intenta nuevamente!`;
+      finalMessageDiv.innerHTML = `Lo lamento ${playerName}, obtuviste ${score} puntos. ¡Intenta nuevamente!`;
     }
   }
 
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     score = 0;
     playerName = "";
     playerNameInput.value = "";
+    hiddenImage.classList.add("hidden");
     gameDiv.classList.remove("hidden");
     quizDiv.classList.add("hidden");
     resultDiv.classList.add("hidden");

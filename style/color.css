@@ -48,12 +48,17 @@ footer {
 .responsive-img {
   display: none; /* Oculta la imagen completamente */
 }
+
 .image-with-border { 
 display: inline-block;
   width: auto;
 height: auto;
 border: solid darkgrey 10px; /* Borde negro de 5 cm */
 border-radius: 20%;
+}
+.Form{
+	display: flex;
+	justify-content: center;
 }
 
 
